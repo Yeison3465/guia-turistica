@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="menuad.css" />
+    </h:head>
+    <h:body class="body11">
+        <header class="header9">
+            <h1 class="h15"> JARY</h1>   
+            <h:commandButton class="boton14" value="cerrar Sesion" action="#{adminControl.cerrar()}"></h:commandButton>
+        </header>
+        <main>
+            <div class="contenedor15">
+                <h2 class="h23">Menu de Administrador</h2>
+                <div class="botones6">
+                    <div>
+                        <h:commandButton class="boton14" value="Ver problemas" action="#{turistaControl1.verproble()}"></h:commandButton>
+                    </div>
+                    <div>
+                        <h:commandButton class="boton14" value="Ver usuarios" action="#{turistaControl1.verusu()}"></h:commandButton>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </h:body>
+</html>

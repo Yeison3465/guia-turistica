@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="proble.css" />
+    </h:head>
+    <h:body class="body13">
+        <header class="header17">
+            <h1 class="h17"> JARY</h1>   
+            
+            <h:commandButton class="boton16" value="Volver" action="#{turistaControl1.adminsmenu()}"></h:commandButton>
+        </header>
+        <main>
+            <h2 class="h25">Problemas reportado</h2>
+            <p:panel>
+                <p:panelGrid columns="4">
+                    <p:dataTable value="#{soporteControl.sopor}" var="p">
+                        <p:column headerText="nombre">
+
+                            #{p.nombre}
+                        </p:column>
+                        <p:column headerText="apellido">
+
+                            #{p.apellido}
+                        </p:column>
+                        <p:column headerText="Descripcion del problema">
+
+                            #{p.descripcion}
+                        </p:column>
+                        
+                        
+                    </p:dataTable>
+                </p:panelGrid>
+            </p:panel>
+        </main>
+    </h:body>
+</html>

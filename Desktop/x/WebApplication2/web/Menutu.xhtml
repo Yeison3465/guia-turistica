@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="menutu.css" />
+    </h:head>
+    <h:body class="body9">
+        <p:growl></p:growl>
+        <header class="header5">
+            <h1 class="h36"> BIENVENIDO A JARY</h1>
+            <h2 class="h21"> Sitio para generar guias en Cartagena</h2>
+            <img src="imagenes/Fg.png" alt="Descripción de la imagen" class="img1"></img>
+        </header>
+        <main class="main1">
+            <div class="contenido">
+
+                <h3 class="h39"> Inicio De Sesion</h3>
+                <samp class="top1"></samp>
+                <samp class="right1"></samp>
+                <samp class="bottom1"></samp>
+                <samp class="left1"></samp>
+                <div class="contenido22">
+                    <div>
+                        <span class="spa1">Usuario</span>
+
+                        <div>
+                            <p:inputText class="entrada3" placeholder="Ingrese usuario" value="#{turistavisiControl.tv.usuario}" ></p:inputText>
+                        </div>
+
+                    </div>
+                    <div>
+                        <span class="spa1">Contraseña</span>
+                        <div>
+                            <p:inputText class="entrada3" placeholder="Ingrese Contraseña" value="#{turistavisiControl.tv.contraseña}" ></p:inputText>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h:commandButton class="boton11" value="Iniciar" action="#{turistavisiControl.validarUsuario2()}"></h:commandButton>
+                    </div>
+                </div>
+            </div>
+            <div class="botones3">
+                <h:commandButton class="boton11" value="registrase" action="#{turistaControl1.registrase()}"></h:commandButton>
+                <h:commandButton class="boton11" value="Solo Admin" action="#{turistaControl1.admin()}"></h:commandButton>
+                <h:commandButton class="boton11" value="Reportar problema" action="#{turistaControl1.soporte()}"></h:commandButton>
+                
+            </div>
+
+        </main>
+    </h:body>
+</html>

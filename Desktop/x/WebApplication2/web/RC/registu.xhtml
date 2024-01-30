@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="registro.css" />
+    </h:head>
+    <h:body class="body10">
+        <p:growl></p:growl>
+        <header class="header8">
+            <h1 class="h14">JARY</h1>
+            <h:commandButton class="boton13" value="Volver al inicio" action="#{turistaControl1.inicios()}"></h:commandButton>
+        </header>
+
+        <main>
+            <img src="imagenes/Fg.png" alt="Descripción de la imagen" class="img2"></img>
+            <h2 class="h22"> Este un apartado para que usted se registre</h2>
+            <h3 class="h30"> Queremos que usted sea parte de nuestra comunidad</h3>
+            <div class="contenedor14">
+                <samp class="top2"></samp>
+                <samp class="right2"></samp>
+                <samp class="bottom2"></samp>
+                <samp class="left2"></samp>
+                <h4 class="h40"> Registro</h4>
+                <div>
+                    <span class="spa2">Nombre</span>
+                    <div>
+                        <p:inputText class="entrada4" placeholder="Ingrese Nombre" value="#{turistavisiControl.tv.nombre}" ></p:inputText>
+                    </div>  
+                </div>
+                <div>
+                    <span class="spa2">Apellido</span>
+                    <div>
+                        <p:inputText class="entrada4" placeholder="Ingrese Apellido" value="#{turistavisiControl.tv.apellido}" ></p:inputText>
+                    </div>
+
+                </div>
+                <div>
+                    <span class="spa2" >Pais</span>
+                    <div>
+                        <p:inputText class="entrada4" placeholder="Ingrese pais" value="#{turistavisiControl.tv.pais}" ></p:inputText>
+                    </div>
+
+                </div>
+                <div>
+                    <span class="spa2">Usuario</span>
+                    <div>
+                        <p:inputText class="entrada4" placeholder="Ingrese usuario" value="#{turistavisiControl.tv.usuario}" ></p:inputText>
+                    </div>
+
+                </div>
+
+                <div>
+                    <span class="spa2">Contraseña</span>
+                    <div>
+                        <p:inputText class="entrada4" placeholder="Ingrese Contraseña" value="#{turistavisiControl.tv.contraseña}"></p:inputText>
+                    </div>
+
+                </div>
+                <div class="botones4">
+                    <h:commandButton class="boton12" value="Registro Completado" action="#{turistavisiControl.agregarT()}"></h:commandButton>
+                </div>
+
+                
+            </div>
+        </main>
+    </h:body>
+</html>

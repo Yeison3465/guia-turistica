@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="guias.css" />
+    </h:head>
+    <h:body class="body5">
+        <header class="header4">
+            <h1 class="p4"> JARY</h1>   
+            <h:commandButton class="boton6" value="Inicio" action="#{turistaControl1.retornar()}"></h:commandButton>
+            <h:commandButton class="boton6" value="Ver sitios" action="#{turistaControl1.versitios()}"></h:commandButton>
+            
+        </header>
+
+        <main>
+            <h1 class="titulo2">GUIA GENERADA</h1>
+            <div class="botones5">
+                <h:commandButton  value="Generar guia" action="#{climaControl.guia3()}" class="boton6"></h:commandButton>
+                <h:commandButton value="Eliminar" action="#{climaControl.vaciar()}" class="boton6"></h:commandButton>
+            </div>
+            <p:panel>
+                <p:dataTable value="#{climaControl.guiaGenerada}" var="gg">
+                    <p:column headerText="Nombre">
+
+                        #{gg.nombre}
+                    </p:column>
+                    <p:column headerText="Descripcion">
+
+                        #{gg.descripcion}
+                    </p:column>
+                    <p:column headerText="hora de entrada">
+
+                        #{gg.horadentrada}
+                    </p:column>
+                    <p:column headerText="hora de salida">
+
+                        #{gg.horadesalida}
+                    </p:column>
+                    <p:column headerText="imagen">
+
+                        <p:graphicImage value="#{gg.imagen}" alt="Descripción de la imagen" width="200" height="150"/>
+                    </p:column>
+
+
+                </p:dataTable>
+            </p:panel>
+
+
+        </main>
+
+
+
+
+
+    </h:body>
+</html>

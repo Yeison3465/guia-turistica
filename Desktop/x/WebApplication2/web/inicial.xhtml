@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      >
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="estilo.css" />
+    </h:head>
+    <h:body class="body">
+        <h1 class="titulo">B I E N V E N I D O </h1>
+        <div class="Container">
+            <h2 class="h2">Queremos que con nuestra recomendaciones mejores tus vacaciones :) </h2>
+            <samp class="top"></samp>
+            <samp class="right"></samp>
+            <samp class="bottom"></samp>
+            <samp class="left"></samp>
+            <h3 class="p">Ciudad: Cartagena  Temperatura: #{climaControl.clima.temperaturaCelsius}</h3>
+
+
+
+
+            <div class="botones">
+                <div >
+                    <h:commandButton class="boton1" value="Generar Guia" action="#{climaControl.guia2()}"></h:commandButton>
+                </div>
+                <div>
+
+                    <h:commandButton class="boton2" value="Ver sitios " action="#{turistaControl1.versitios()}"></h:commandButton>
+                    
+
+                </div>
+                
+                <div>
+                    <h:commandButton class="boton2" value="Cerrar sesion " action="#{turistavisiControl.cerrar()}"></h:commandButton>
+                </div>
+
+
+            
+        </div>
+        </div>
+    </h:body>
+</html>

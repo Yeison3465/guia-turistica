@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="adminx.css" />
+    </h:head>
+    <h:body class="body8">
+        <p:growl></p:growl>
+        <header class="header6">
+            <h1 class="p8"> JARY</h1>   
+            <h:commandButton class="boton8" value="Inicio" action="#{turistaControl1.inicios()}"></h:commandButton>
+        </header>
+
+        <div class="Contenedor5">
+
+            <div class="card3">
+                <img src="imagenes/jordi.jpg" class="imak"></img>
+
+                <div class="card__content2">
+                    <h3 class="h35">INICIO DE ADMINS</h3>
+                    <div class="c">
+                        <p:inputText class="entrada2" placeholder="Usuario" value="#{adminControl.ad1.usuario}" ></p:inputText>
+                    </div>
+                    <div class="c">
+                        <p:inputText class="entrada2" placeholder="Contraseña" value="#{adminControl.ad1.contraseña}" ></p:inputText>
+                    </div>
+                    <div class="f">
+                        <h:commandButton class="boton9" value="Inicio" action="#{adminControl.validarUsuario()}"></h:commandButton>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </h:body>
+</html>

@@ -1,0 +1,292 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 7/11/2023, 5:23:51 p. m.
+    Author     : Yeison De Jesus
+*/
+
+.body5{
+    background: black;
+}
+
+.header4{
+    background-color: #070C0F;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+
+.header4{animation:tracking-in-contract 0.4s linear both} @keyframes tracking-in-contract{0%{letter-spacing:.6em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
+
+.p4{
+    color:rgb(61, 106, 255);
+    font-family: "monospace";
+    font-size: 1rem;
+
+}
+
+
+
+.botones5{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.boton6{
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.boton6:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.boton6:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.boton6::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.boton6:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+
+.titulo2{
+    color:white;
+    position: relative;
+    text-align: center;
+
+    font-family: "Segoe UI";
+    font-size: 4rem;
+    padding: 1px;
+}
+
+
+.titulo2{animation:tracking-in-expand-forward-bottom 0.4s linear both} @keyframes tracking-in-expand-forward-bottom{0%{letter-spacing:-.2em;transform:translateZ(-700px) translateY(100px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);opacity:1}}
+.contenedor13{
+  box-sizing: border-box;
+  width: 57rem;
+  height: 12rem;
+  background: #070C0F;
+  border: 1px solid rgb(61, 106, 255);
+  
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  
+  cursor: pointer;
+  transition: all 0.5s;
+ 
+ 
+  
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+
+
+.contenedor13{animation:rotate-center 0.4s} @keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+
+.contenedor13:hover {
+  border: 5px solid white;
+  transform: scale(1.05);
+}
+
+.contenedor13:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.fo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top:  13rem;
+}
+
+.h34{
+    color: white;
+    text-align: center;
+    position: relative;
+    font-family: "Segoe UI";
+    font-size: 1.4rem;
+    
+}
+
+.h34:hover{
+    color: rgb(61, 106, 255);
+}
+.botones2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ui-inputfield.entrada2{
+    width: 210px;
+    height: 50px;
+    padding: 0 16px;
+    background: transparent;
+    border-radius: 4px;
+    border: 3rem solid(61, 106, 255);
+    color: #f9f9f9;
+    animation: shake_541 0.14s 3;
+}
+
+.ui-inputfield.entrada2:valid {
+    border-color: rgb(61, 106, 255);
+    animation: none;
+}
+@keyframes shake_541 {
+    0%, 100% {
+        translate: 0;
+    }
+
+    25% {
+        translate: 8px 0;
+    }
+
+    75% {
+        translate: -8px 0;
+    }
+}
+
+.b5{
+    text-align: center;
+    padding: 19px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton7{
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.boton7:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.boton7:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.boton7::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.boton7:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+

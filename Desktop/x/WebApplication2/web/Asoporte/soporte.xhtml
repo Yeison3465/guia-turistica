@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="soporte.css" />
+    </h:head>
+    <h:body class="body3">
+        <header class="header3">
+            <h1 class="p3"> JARY</h1>   
+            <h:commandButton class="boton4" value="Volver al inicio" action="#{turistaControl1.inicios()}"></h:commandButton>
+            
+        </header>
+        <main>
+            <div class="Contenedor3">
+                <h3 class="h33">Reportar problema</h3>
+
+                <div class="a">
+                    <p:inputText class="entrada" placeholder="Nombre" value="#{soporteControl.sp.nombre}"  ></p:inputText>
+                </div>
+                <div class="a">
+                    <p:inputText class="entrada" placeholder="Apellido" value="#{soporteControl.sp.apellido}"  ></p:inputText>
+                </div>
+                <div class="a">
+                    <p:inputText class="entrada" placeholder="Descripcion" value="#{soporteControl.sp.descripcion}"  ></p:inputText>
+                </div>
+                <div class="b">
+                    <h:commandButton class="boton5" value="Reportar" action="#{soporteControl.agregar()}" ></h:commandButton>
+                </div>
+               
+
+
+            </div>
+           
+        </main>
+        
+       
+    </h:body>
+</html>
